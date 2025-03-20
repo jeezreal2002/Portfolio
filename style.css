@@ -1,0 +1,98 @@
+:root{
+    --bg-color: #C4C4C2;
+    --text-color: #fff;
+    --second-bg-color:#3A3A39;
+}
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #C4C4C2;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.mainText{
+    color: var(--text-color);
+} 
+
+
+
+.fweb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fweb p{
+    -webkit-text-stroke: 2px rgb(179, 179, 179);
+    z-index: 200;
+}
+
+.mainText h1{
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    -webkit-text-stroke: 3px rgb(179, 179, 179);
+}
+
+@media screen and (max-width: 768px) {
+    .mainText h1 {
+        font-size: 6rem;
+    }
+
+    .mainPic {
+        width: 300px  !important;
+        height:200px !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .mainText h1 {
+        font-size: 4rem;
+    }
+
+    .mainPic {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+.mainPic{
+    position:absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 540px;
+    height: 430px;
+    bottom: 0;
+    left: 20%;
+}
+
+.mainPic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+
+/* Force Font Awesome icons to display */
+.fas, .fab, .far, .fa {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+    font-weight: 900;
+}
+
+.fab {
+    font-family: "Font Awesome 6 Brands" !important;
+}

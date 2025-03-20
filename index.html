@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/gif" href="images/Frame 2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>My portfolio</title>
+</head>
+
+<body>
+
+    <nav class="fixed mb-20 top-0 left-0 right-0 bg-white shadow-lg z-5000">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-xl font-bold text-gray-800">JeezReaL</div>
+                
+                <!-- Mobile menu checkbox hack -->
+                <input type="checkbox" id="nav-toggle" class="hidden peer">
+                <label for="nav-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-gray-900 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900 transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile menu -->
+                <div class="hidden peer-checked:block md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg">
+                    <div class="px-2 pt-2 pb-3 space-y-1 md:hidden">
+                        <a href="#home" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Home</a>
+                        <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">About</a>
+                        <a href="#projects" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Projects</a>
+                        <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+   
+
+    <div class="container my-10 d-flex align-items-center justify-content-center relative" id="home">
+        <div class="container-fluid p-0 d-flex justify-content-center align-items-center shadow rounded-xl mt-20"
+        
+        style="height: 500px; background: linear-gradient(to right, var(--bg-color) 50%, var(--second-bg-color) 50%); position: relative;">
+
+
+            <div class="mainText h-full relative flex flex-col align-items-center text-center justify-center">
+                <span class="text-2xl font-black text-[var(--second-bg-color)] absolute left-12 top-30">Hello, I'm</span>
+                <h1>Jesryl Palmes</h1>
+                <div class="fweb">
+                    <p class="absolute bottom-12 text-3xl font-black md:text-5xl font-black">
+                        FRONT-END WEB DEVELOPER
+                    </p>
+                </div>
+            </div>
+
+            <div class="mainPic">
+                <img src="images/ahehe.png" alt="Jesryl Palmes Profile">
+            </div>
+
+
+            <div class="absolute bottom-4 w-full flex justify-center">
+                <button class="text-white underline p-2 rounded-xl z-10 hover:scale-105 hover:bg-opacity-90 transition-all duration-300 font-bold flex items-center gap-2"> 
+                    <a href="#about" class="text-white hover:text-gray-300 transition-colors duration-300 flex items-center gap-2">
+                        More about me?
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-[var(--bg-color)] py-16" id="about">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-6xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-[var(--main-color)] mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-lg leading-relaxed ">
+                        Hello! I'm Jesryl Palmes, an aspiring Front-End Web Developer and student passionate about creating beautiful and functional web experiences. Currently learning and exploring web development, I'm eager to transform my creative ideas into engaging digital solutions through coding and design.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        I specialize in modern web technologies including HTML5, CSS3, JavaScript, and various frameworks like Node and Tailwind CSS also Bootstrap. My goal is to build responsive, user-friendly websites that leave a lasting impression.
+                    </p>
+    
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-[var(--second-bg-color)] rounded-lg p-6 space-y-4 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-[var(--text-color)]">My Skills</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-[var(--text-color)]">HTML/CSS</span>
+                                    <span class="text-[var(--text-color)]">60%</span>
+                                </div>
+                                <div class="w-full bg-[var(--bg-color)] rounded-full h-3">
+                                    <div class="bg-[var(--text-color)] h-3 rounded-full transition-all duration-300 hover:bg-opacity-80" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-[var(--text-color)]">JavaScript</span>
+                                    <span class="text-[var(--text-color)]">35%</span>
+                                </div>
+                                <div class="w-full bg-[var(--bg-color)] rounded-full h-3">
+                                    <div class="bg-[var(--text-color)] h-3 rounded-full transition-all duration-300 hover:bg-opacity-80" style="width: 35%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-[var(--text-color)]">Node</span>
+                                    <span class="text-[var(--text-color)]">20%</span>
+                                </div>
+                                <div class="w-full bg-[var(--bg-color)] rounded-full h-3">
+                                    <div class="bg-[var(--text-color)] h-3 rounded-full transition-all duration-300 hover:bg-opacity-80" style="width: 20%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-[var(--text-color)]">Java</span>
+                                    <span class="text-[var(--text-color)]">25%</span>
+                                </div>
+                                <div class="w-full bg-[var(--bg-color)] rounded-full h-3">
+                                    <div class="bg-[var(--text-color)] h-3 rounded-full transition-all duration-300 hover:bg-opacity-80" style="width: 25%"></div>
+                                </div>
+                            </div>    
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium text-[var(--text-color)]">Php</span>
+                                    <span class="text-[var(--text-color)]">40%</span>
+                                </div>
+                                <div class="w-full bg-[var(--bg-color)] rounded-full h-3">
+                                    <div class="bg-[var(--text-color)] h-3 rounded-full transition-all duration-300 hover:bg-opacity-80" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[var(--bg-color)] " id="projects">
+        <div class="container mx-auto px-4 py-16">
+            <h2 class="text-6xl font-bold text-center" style="margin-bottom: 60px;">Featured Projects</h2>
+            <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-[var(--second-bg-color)] rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="relative">
+                        <img src="images/job-portal.png" alt="Online Job Portal Project" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                        <div class="absolute top-0 right-0 m-4">
+                            <span class="text-[var(--text-color)] bg-[var(--second-bg-color)] px-3 py-1 rounded-full text-sm">Featured</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2 hover:text-opacity-80 transition-colors">Online Job Portal</h3>
+                        <p class="text-[var(--text-color)] opacity-80 mb-4 line-clamp-6">A platform that connects job seekers with businesses, featuring job postings and location-based search functionality.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://bagocitydigitaljobportal.bccbsis.com/capstone/index.php" class="inline-block px-6 py-2
+                             bg-[var(--bg-color)] text-[var(        --second-bg-color)] 
+
+                             rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">View Project</a>
+                            <!-- <div class="flex gap-2">
+                                <a href="#" class="text-[var(--text-color)] hover:text-opacity-80 transition-colors">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="#" class="text-[var(--text-color)] hover:text-opacity-80 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-[var(--second-bg-color)] rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="relative">
+                        <img src="images/flower.png" alt="Growing Flower Project" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2 hover:text-opacity-80 transition-colors">A growing flower</h3>
+                        <p class="text-[var(--text-color)] opacity-80 mb-4 line-clamp-6">A beautiful animated flower created with HTML, CSS and JavaScript that grows and blooms. Perfect for surprising your loved one with a unique digital gift that shows your creativity and affection.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="http://wye.unaux.com/?fbclid=IwY2xjawIuDGdleHRuA2FlbQIxMAABHfoj5Dkjg_UyyjnOpqtsjzqlltPLlqrG0XjchdHfIDWFWB3Amcmb88knYg_aem_no8TuPCvhEfLcE_GdWFuww" class="inline-block px-6 py-2    bg-[var(--bg-color)] text-[var(--second-bg-color)]  rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">View Project</a>
+                            <!-- <div class="flex gap-2">
+                                <a href="#" class="text-[var(--text-color)] hover:text-opacity-80 transition-colors">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="#" class="text-[var(--text-color)] hover:text-opacity-80 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-[var(--second-bg-color)] rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                    <div class="relative">
+                        <img src="images/letter.png" alt="Letter Message Project" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[var(--text-color)] mb-2 hover:text-opacity-80 transition-colors">A cute letter message</h3>
+                        <p class="text-[var(--text-color)] opacity-80 mb-4 line-clamp-6">An interactive digital love letter featuring animations and design elements to create a meaningful way to express feelings.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="http://letter.unaux.com/?fbclid=IwY2xjawIuCztleHRuA2FlbQIxMAABHSlMZlGyZEOwE1z5wfA4wvcNUUCtRmYauI3PRUhuF1Z9J7pDKmuo-35GOg_aem_XLLGln-x7oGwt5HwfyLMnA" class="inline-block px-6 py-2
+                            bg-[var(--bg-color)] text-[var(        --second-bg-color)]  rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">View Project</a>
+                            <!-- <div class="flex gap-2">
+                                <a href="#" class="text-[var(--text-color)] hover:text-opacity-80 transition-colors">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                                <a href="#" class="text-[var(--text-color)] hover:text-opacity-80 transition-colors">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-16 bg-[var(--bg-color)] text-[var(--text-color)]" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="text-6xl font-bold text-center text-[var(--second-bg-color)] mb-12">Contact Me</h2>
+            <div class="max-w-3xl mx-auto">
+                <form class="space-y-6 d-flex flex-col gap-2">
+                    <div class="group relative">
+                        <input type="text" required 
+                            class="w-full bg-transparent border-b-2 border-[var(--second-bg-color)] py-2 px-4 focus:outline-none focus:border-opacity-75 transition-all duration-300 
+                            text-[var(--second-bg-color)] peer outline-none" />
+                        <label class="absolute left-4 top-2 text-[var(--text-color)] 
+                        
+                        transition-all duration-300 pointer-events-none peer-focus:-top-6 peer-focus:text-sm peer-valid:-top-6 peer-valid:text-sm">Your Name</label>
+                    </div>
+                    
+                    <div class="group relative">
+                        <input type="email" required 
+                            class="outline-none w-full bg-transparent border-b-2 border-[var(--second-bg-color)] py-2 px-4 focus:outline-none focus:border-opacity-75 transition-all duration-300 text-[var(--second-bg-color)] peer"/>
+                        <label class="absolute left-4 top-2 text-[var(--text-color)] transition-all duration-300 pointer-events-none peer-focus:-top-6 peer-focus:text-sm peer-valid:-top-6 peer-valid:text-sm">Your Email</label>
+                    </div>
+
+                    <div class="group relative">
+                        <textarea required 
+                            class=" outline-none resize-none w-full bg-transparent border-2 border-[var(--second-bg-color)] rounded-lg py-2 px-4 h-32 focus:outline-none focus:border-opacity-75 transition-all duration-300 text-[var(--second-bg-color)] peer"></textarea>
+                        <label class="absolute left-4 top-2 text-[var(--text-color)] p-1 bg-[var(--bg-color)] transition-all duration-300 pointer-events-none peer-focus:-top-6 peer-focus:text-sm peer-valid:-top-6 peer-valid:text-sm">Type your message here.....</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="bg-[var(--second-bg-color)] text-[var(--text-color)] px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-12 flex justify-center space-x-8">
+                    <a href="#" class="text-[var(--second-bg-color)] hover:text-opacity-75 transition-colors text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-[var(--second-bg-color)] hover:text-opacity-75 transition-colors text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-[var(--second-bg-color)] hover:text-opacity-75 transition-colors text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[var(--second-bg-color)] text-[var(--text-color)] py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Column -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4">JeezReaL</h3>
+                    <p class="text-gray-300 mb-4">
+                        Crafting digital experiences with passion and precision. Let's build something amazing together.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="hover:text-gray-300 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-gray-300 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-gray-300 transition-colors">About</a></li>
+                        <li><a href="#projects" class="hover:text-gray-300 transition-colors">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-gray-300 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2">
+                        <p><i class="fas fa-phone mr-2"></i> +9567 660 680</p>
+                        <p><i class="fas fa-envelope mr-2"></i> contact@palmesjesryl.com</p>
+                        <p><i class="fas fa-location-dot mr-2"></i> Bago City, Philippines</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-sm">
+                    © <span id="currentYear"></span> JeezReaL. All rights reserved.
+                   2025
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+<!-- tailwind sc -->
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+<style>
+    /* ... existing styles ... */
+    
+    /* Force Font Awesome icons to display */
+    i.fas::before,
+    i.fab::before,
+    i.far::before,
+    i.fa::before {
+        display: inline-block !important;
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+        font-style: normal !important;
+        font-variant: normal !important;
+        text-rendering: auto !important;
+        -webkit-font-smoothing: antialiased !important;
+    }
+
+    /* Specific weight for solid icons */
+    i.fas {
+        font-family: "Font Awesome 6 Free" !important;
+        font-weight: 900 !important;
+    }
+
+    /* Specific weight for brand icons */
+    i.fab {
+        font-family: "Font Awesome 6 Brands" !important;
+        font-weight: 400 !important;
+    }
+
+    /* Fix icon sizes */
+    i.fas, i.fab, i.far, i.fa {
+        font-size: 1em;
+        line-height: 1;
+        vertical-align: middle;
+    }
+</style>
+
+<script>
+    // Force Font Awesome to reload icons
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true,
+        observeMutations: true,
+        autoReplaceSvg: true,
+        autoAddCss: true
+    };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+</body>
+</html>
