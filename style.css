@@ -46,10 +46,11 @@ body{
     }
 
     .mainPic {
-        width: 300px  !important;
+        display:none;
+/*         width: 300px  !important;
         height:200px !important;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%); */
     }
 
 }
